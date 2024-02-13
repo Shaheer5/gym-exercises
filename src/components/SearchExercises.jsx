@@ -8,7 +8,7 @@ export const SearchExercises = () => {
   
   const handleSearch = async () => {
     if (search) {
-      const exercisesData = await fetchData('https://exercisedb.p.rapidapi.com/exercises', exerciseOptions);
+      const exercisesData = await fetchData('https://exercisedb.p.rapidapi.com/exercises?limit=10000', exerciseOptions);
       console.log(exercisesData);
     }
   }
