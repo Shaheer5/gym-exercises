@@ -11,26 +11,17 @@ export const BodyPart = ({ item, bodyPart, setBodyPart }) => {
       alignItems='center'
       justifyContent='center'
       className='bodyPart-card'
-      sx={
-        bodyPart === item ? {
-          borderTop: '4px solid #FF2625',
-          backgroundColor: '#FFF',
-          borderBottomLeftRadius: '20px',
-          width: '270px',
-          height: '280px',
-          cursor: 'pointer',
-          gap: '47px'
-        } : {
-          backgroundColor: "#FFF",
-          borderBottomLeftRadius: '20px',
-          width: '270px',
-          height: '280px',
-          cursor: 'pointer',
-          gap: '47px'
-        }
-      }
+      sx={{
+        borderTop: bodyPart === item ? { borderTop: '4px solid #FF2625', } : '',
+        backgroundColor: "#FFF",
+        borderBottomLeftRadius: '20px',
+        width: '270px',
+        height: '280px',
+        cursor: 'pointer',
+        gap: '47px'
+      }}
     >
-      <img src={Icon} alt="dumbbell" styles={{ width: '40px', height: '40px' }} />
-    </Stack>
+      <img src={Icon} alt="dumbbell" style={{ width: '150px', height: '150px' }} />
+    </Stack >
   )
 }
