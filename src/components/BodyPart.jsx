@@ -20,8 +20,10 @@ export const BodyPart = ({ item, bodyPart, setBodyPart }) => {
         cursor: 'pointer',
         gap: '47px'
       }}
+      onClick={() => setBodyPart(item)}
     >
-      <img src={Icon} alt="dumbbell" style={{ width: '150px', height: '150px' }} />
+      <img src={Icon} alt="dumbbell" style={{ width: '40px', height: '40px' }} />
+      <Typography fontSize="24px" fontWeight='bold' color='#3A1212' textTransform='capitalize'>{item}</Typography>
     </Stack >
   )
 }

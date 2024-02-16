@@ -13,14 +13,14 @@ export const Home = () => {
     <Box>
       <HeroBanner />
       <SearchExercises
+        exercises={setBodyPart}
         setExercises={setExercises}
         bodyPart={bodyPart}
-        setBodyPart={setBodyPart}
       />
       <Exercises
+        exercises={setBodyPart}
         setExercises={setExercises}
         bodyPart={bodyPart}
-        setBodyPart={setBodyPart}
       />
     </Box>
   )
