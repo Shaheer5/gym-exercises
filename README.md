@@ -1,4 +1,5 @@
 # React + Vite
+#API is not in working state + Now they are suggesting a pricing plan to use api
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
